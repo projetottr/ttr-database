@@ -48,16 +48,17 @@ Neste exemplo vamos antotar utilizando uma variante `18 29172865 29172865 G/A 1`
 docker run -it -v $(pwd):/data  ensemblorg/ensembl-vep ./vep --id "18 29172865 29172865 G/A 1" --species homo_sapiens --force  --database --assembly GRCh37 --refseq --tab --custom /data/TTRdb_cureted.sort.vcf.gz,TTRdb,vcf,exact,0,REVEL,REVEL_TTMDB,REVEL_RISK -o /data/TTRdb_output.txt
 ```
 
+As últimas colunas da tabela: `REVEL, REVEL_TTMDB e REVEL_RISK`.
 **TTRdb_output.txt**
 ```
 ## ENSEMBL VARIANT EFFECT PREDICTOR v104.3
-## Output produced at 2021-08-18 21:00:58
+## Output produced at 2021-08-19 01:44:03
 ## Connected to homo_sapiens_core_104_37 on ensembldb.ensembl.org
 ## Using API version 104, DB version 104
-## ensembl-funcgen version 104.59ae779
 ## ensembl-variation version 104.6154f8b
-## ensembl-io version 104.1d3bb6e
 ## ensembl version 104.1af1dce
+## ensembl-funcgen version 104.59ae779
+## ensembl-io version 104.1d3bb6e
 ## refseq version 2020-10-26 17:03:42 - GCF_000001405.25_GRCh37.p13_genomic.gff
 ## gencode version GENCODE 19
 ## assembly version GRCh37.p13
@@ -83,10 +84,12 @@ docker run -it -v $(pwd):/data  ensemblorg/ensembl-vep ./vep --id "18 29172865 2
 ## REFSEQ_MATCH : RefSeq transcript match status
 ## REFSEQ_OFFSET : HGVS adjustment length required due to mismatch between RefSeq transcript and the reference genome
 ## SOURCE : Source of transcript
-## TTRdb : /data/TTRdb_cureted.sort.vcf.gz (exact)
-## TTRdb_REVEL : REVEL field from /data/TTRdb_cureted.sort.vcf.gz
-#Uploaded_variation	Location	Allele	Gene	Feature	Feature_type	Consequence	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	IMPACT	DISTANCE	STRAND	FLAGS	REFSEQ_MATCH	REFSEQ_OFFSET	SOURCE	TTRdb	TTRdb_REVEL
-18_29172865_G/A	18:29172865	A	7276	NM_000371.4	Transcript	missense_variant	102	726	G/S	Ggt/Agt	-	MODERATE	-	1	-	-	-	-	NM_000371.4:c.76G>A	BENIGN
+## TTRdb : /data/TTRdb_cureted.vcf.gz (exact)
+## TTRdb_REVEL : REVEL field from /data/TTRdb_cureted.vcf.gz
+## TTRdb_REVEL_TTMDB : REVEL_TTMDB field from /data/TTRdb_cureted.vcf.gz
+## TTRdb_REVEL_RISK : REVEL_RISK field from /data/TTRdb_cureted.vcf.gz
+#Uploaded_variation	Location	Allele	Gene	Feature	Feature_type	Consequence	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	IMPACT	DISTANCE	STRAND	FLAGS	REFSEQ_MATCH	REFSEQ_OFFSET	SOURCE	TTRdb	TTRdb_REVEL	TTRdb_REVEL_TTMDB	TTRdb_REVEL_RISK
+18_29172865_G/A	18:29172865	A	7276	NM_000371.4	Transcript	missense_variant	102	726	G/S	Ggt/Agt	-	MODERATE	-	1	-	-	-	-	NM_000371.4:c.76G>A	BENIGN	0.174	VERY LOW
 ```
 
 # Colunas e Valores
