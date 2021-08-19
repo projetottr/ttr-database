@@ -105,7 +105,37 @@ As últimas colunas da tabela: `REVEL, REVEL_TTMDB e REVEL_RISK`.
 18_29172865_G/A	18:29172865	A	7276	NM_000371.4	Transcript	missense_variant	102	726	G/S	Ggt/Agt	-	MODERATE	-	1	-	-	-	-	NM_000371.4:c.76G>A	BENIGN	0.174	VERY LOW
 ```
 
-# Colunas e Valores
+# Resultado
+
+| **Campos**          | **Valores**         |
+| ------------------- | ------------------- |
+| #Uploaded_variation | 18_29172865_G/A     |
+| Location            | 18:29172865         |
+| Allele              | A                   |
+| Gene                | 7276                |
+| Feature             | NM_000371.4         |
+| Feature_type        | Transcript          |
+| Consequence         | missense_variant    |
+| cDNA_position       | 102                 |
+| CDS_position        | 76                  |
+| Protein_position    | 26                  |
+| Amino_acids         | G/S                 |
+| Codons              | Ggt/Agt             |
+| Existing_variation  | -                   |
+| IMPACT              | MODERATE            |
+| DISTANCE            | -                   |
+| STRAND              | 1                   |
+| FLAGS               | -                   |
+| REFSEQ_MATCH        | -                   |
+| REFSEQ_OFFSET       | -                   |
+| SOURCE              | -                   |
+| TTRdb               | NM_000371.4:c.76G>A |
+| TTRdb_REVEL         | BENIGN              |
+| TTRdb_REVEL_TTMDB   | 0.174               |
+| TTRdb_REVEL_RISK    | VERY LOW            |
+
+
+# Risco - score e classificação
 
 | **RISK (valores)** | **RISK (descrição)** |
 | -------------- | ---------------- |
@@ -114,6 +144,7 @@ As últimas colunas da tabela: `REVEL, REVEL_TTMDB e REVEL_RISK`.
 | >=0.711        | MODERATE         |
 | >=0.929        | HIGH             |
 
+# TTRdb - VCF formato
 
 | **Colunas**                      | **Valores**                                         |
 | -------------------------------- | --------------------------------------------------- |
