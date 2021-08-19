@@ -28,6 +28,7 @@ O Docker Engine está disponível em diversas de plataformas Linux, macOS e Wind
 1. Baixar a image do ensembl-vep (caso não tenha)
 2. Clonar o git ttr-database
 3. Executar o ensembl-vep com as opções:
+  `--id "18 29172865 29172865 G/A 1"`
   `--species homo_sapiens`
   `--force`
   `--database`
