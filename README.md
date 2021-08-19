@@ -91,58 +91,56 @@ docker run -it -v $(pwd):/data  ensemblorg/ensembl-vep ./vep --id "18 29172865 2
 
 # Colunas e Valores
 
-| RISK (valores) | RISK (descrição) |
+| **RISK (valores)** |** RISK (descrição)** |
 | -------------- | ---------------- |
-| <=0,559        | VERY LOW         |
-| 0,559          | LOW              |
-| >=0,711        | MODERATE         |
-| >=0,929        | HIGH             |
+| <=0.559        | VERY LOW         |
+| 0.559          | LOW              |
+| >=0.711        | MODERATE         |
+| >=0.929        | HIGH             |
 
 
-| Campos                           | Valores                           |
-| -------------------------------- | --------------------------------- |
-| CHROM                            | 18                                |
-| POS                              | 29172902                          |
-| ID                               | NM_000371.4:c.113A>G              |
-| REF                              | A                                 |
-| ALT                              | G                                 |
-| HGVSC                            | NM_000371.4:c.113A>G              |
-| HGVSP                            | NP_000362.1:p.Asp38Gly            |
-| AACHANGE                         | Asp18Gly (p.Asp38Gly)             |
-| VARIANT                          | c.113A>G                          |
-| EXON                             | Exon 2                            |
-| PHENOTYPE                        | LM                                |
-| ETHNIC GROUP                     | Hungarian                         |
-| REFERENCE                        | Vidal (1996) Am J Pathol 148, 361 |
-| IMUTANT3                         | Destabilizing                     |
-| STRUM                            | Destabilizing                     |
-| ISTABLE                          | Destabilizing                     |
-| PROVEAN                          | Deleterious                       |
-| PREDICTSNP                       | Deleterious                       |
-| PHD-SNP                          | Deleterious                       |
-| POLYPHEN-2                       | Deleterious                       |
-| SIFT                             | Deleterious                       |
-| FATHMM                           | Damaging                          |
-| MCSM                             | Destabilizing                     |
-| SDM                              | Destabilizing                     |
-| DUET                             | Destabilizing                     |
-| DYNAMUT                          | Destabilizing                     |
-| CUPSAT                           | Destabilizing                     |
-| ENCOM                            | Destabilizing                     |
-| FOLDX_PROTEIN_STABILITY          | Reduces                           |
-| TANGO_AGGREGATION_TENDENCY       | No effect                         |
-| WALTZ_AMYLOID_PROPENSITY         | No effect                         |
-| LIMBO_CHAPERONE_BINDING_TENDENCY | Increases                         |
-| REVEL                            | PATHOGENIC                        |
-| CLINVAR                          | Pathogenic                        |
-| SEQUENCE_DESTABILIZING           | 3                                 |
-| SEQUENCE_DELETERIOUS             | 6                                 |
-| STRUCTURE                        | 7                                 |
-| AGGREGATION                      | 1                                 |
-| SCORE_RISK_TTMDB                 | HIGH                              |
-| REVEL_TTMDB                      | 970                               |
-| START_SYMPTOMS_MIN               | 33                                |
-| START_SYMPTOMS_MAX               | 53                                |
-| REVEL_RISK                       | HIGH                              |
-
-
+| **Colunas**                      | **Valores**                                         |
+| -------------------------------- | --------------------------------------------------- |
+| CHROM                            | 18                                                  |
+| POS                              | 29172877                                            |
+| ID                               | NM_000371.4:c.88T>C                                 |
+| REF                              | T                                                   |
+| ALT                              | C                                                   |
+| HGVSC                            | NM_000371.4:c.88T>C                                 |
+| HGVSP                            | NP_000362.1:p.Cys30Arg                              |
+| AACHANGE                         | Cys10Arg (p.Cys30Arg)                               |
+| VARIANT                          | c.88T>C                                             |
+| EXON                             | Exon 2                                              |
+| PHENOTYPE                        | AN, E, H, PN                                        |
+| ETHNIC GROUP                     | American (Hungarian)                                |
+| REFERENCE                        | Uemichi (1992) J Med Genet 29, 888                  |
+| IMUTANT3                         | Destabilizing                                       |
+| STRUM                            | Destabilizing                                       |
+| ISTABLE                          | Destabilizing                                       |
+| PROVEAN                          | Deleterious                                         |
+| PREDICTSNP                       | Deleterious                                         |
+| PHD-SNP                          | Deleterious                                         |
+| POLYPHEN-2                       | Deleterious                                         |
+| SIFT                             | Deleterious                                         |
+| FATHMM                           | Damaging                                            |
+| MCSM                             | Stabilizing                                         |
+| SDM                              | Destabilizing                                       |
+| DUET                             | Stabilizing                                         |
+| DYNAMUT                          | Destabilizing                                       |
+| CUPSAT                           | Destabilizing                                       |
+| ENCOM                            | Destabilizing                                       |
+| FOLDX_PROTEIN_STABILITY          | No effect                                           |
+| TANGO_AGGREGATION_TENDENCY       | No effect                                           |
+| WALTZ_AMYLOID_PROPENSITY         | No effect                                           |
+| LIMBO_CHAPERONE_BINDING_TENDENCY | No effect                                           |
+| REVEL                            | PATHOGENIC                                          |
+| CLINVAR                          | Pathogenic/Likely pathogenic/Uncertain Significance |
+| SEQUENCE_DESTABILIZING           | 3                                                   |
+| SEQUENCE_DELETERIOUS             | 6                                                   |
+| STRUCTURE                        | 4                                                   |
+| AGGREGATION                      | 0                                                   |
+| SCORE_RISK_TTMDB                 | MODERATE                                            |
+| REVEL_TTMDB                      | 0.898                                               |
+| START_SYMPTOMS_MIN               | 63                                                  |
+| START_SYMPTOMS_MAX               | 68                                                  |
+| REVEL_RISK                       | MODERATE                                            |
