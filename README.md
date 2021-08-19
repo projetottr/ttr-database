@@ -53,7 +53,7 @@ ou
 Neste exemplo vamos anotar a variante `18 29172865 29172865 G/A 1`, o resultado será salvo no arquivo `TTRdb_output.txt`.
 
 1. No terminal, entre no diretório `ttr-database`
-2. Execute o `docker run`
+2. Execute o `docker run` (comando completo abaixo)
 
 
 ```bash
