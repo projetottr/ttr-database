@@ -36,19 +36,20 @@ O Docker Engine está disponível em diversas de plataformas Linux, macOS e Wind
   `--tab` e
   `--custom /data/TTRdb_cureted.sort.vcf.gz,TTRdb,vcf,exact,0,REVEL,REVEL_TTMDB,REVEL_RISK`
 
-**Download da imagem do ensembl-vep**
+### Download da imagem do ensembl-vep
 ```bash
 docker pull ensemblorg/ensembl-vep
 ```
 
-**Clonar ou Download direto**
+### Clonar ou Download direto
 ```bash
 git clone https://github.com/projetottr/ttr-database.git
 ```
 ou
 * Download: https://github.com/projetottr/ttr-database/archive/refs/heads/main.zip
 
-**Rodando um Exemplo**
+
+### Executando um Exemplo
 Neste exemplo vamos anotar a variante `18 29172865 29172865 G/A 1`, o resultado será salvo no arquivo `TTRdb_output.txt`.
 
 1. Entre no diretório `ttr-database` (do git ou do download que gerou)
@@ -60,7 +61,7 @@ docker run -it -v $(pwd):/data  ensemblorg/ensembl-vep ./vep --id "18 29172865 2
 ```
 
 As últimas colunas da tabela: `REVEL, REVEL_TTMDB e REVEL_RISK`.
-**TTRdb_output.txt**
+### TTRdb_output.txt
 ```
 ## ENSEMBL VARIANT EFFECT PREDICTOR v104.3
 ## Output produced at 2021-08-19 01:44:03
