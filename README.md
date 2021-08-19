@@ -45,9 +45,15 @@ docker pull ensemblorg/ensembl-vep
 ```bash
 git clone https://github.com/projetottr/ttr-database.git
 ```
+ou
+* Download: https://github.com/projetottr/ttr-database/archive/refs/heads/main.zip
 
 **Rodando um Exemplo**
-Neste exemplo vamos antotar utilizando uma variante `18 29172865 29172865 G/A 1` e o resultado será enviado para o arquivo `TTRdb_output.txt`.
+Neste exemplo vamos anotar a variante `18 29172865 29172865 G/A 1`, o resultado será salvo no arquivo `TTRdb_output.txt`.
+
+1. Entre no diretório `ttr-database` (do git ou do download que gerou)
+2. Execute o `docker run`
+
 
 ```bash
 docker run -it -v $(pwd):/data  ensemblorg/ensembl-vep ./vep --id "18 29172865 29172865 G/A 1" --species homo_sapiens --force  --database --assembly GRCh37 --refseq --tab --custom /data/TTRdb_cureted.sort.vcf.gz,TTRdb,vcf,exact,0,REVEL,REVEL_TTMDB,REVEL_RISK -o /data/TTRdb_output.txt
