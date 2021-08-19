@@ -25,9 +25,16 @@ O Docker Engine está disponível em diversas de plataformas Linux, macOS e Wind
 
 # Anotando com VEP ensembl
 
-1. Download da image do ensembl-vep (caso não tenha)
+1. Baixar a image do ensembl-vep (caso não tenha)
 2. Clonar o git ttr-database
-3. Execute o ensembl-vep
+3. Executar o ensembl-vep com as opções
+  4.  --species homo_sapiens 
+  5.  --force  
+  6.  --database 
+  7.  --assembly GRCh37 
+  8.  --refseq 
+  9.  --tab 
+  10. --custom /data/TTRdb_cureted.sort.vcf.gz,TTRdb,vcf,exact,0,REVEL,REVEL_TTMDB,REVEL_RISK
 
 **Download da imagem do ensembl-vep**
 ```bash
@@ -38,7 +45,7 @@ docker pull ensemblorg/ensembl-vep
 Neste exemplo vamos antotar utilizando uma variante `18 29172865 29172865 G/A 1` e o resultado será enviado para o arquivo `TTRdb_output.txt`.
 
 ```bash
-docker run -it -v $(pwd):/data  ensemblorg/ensembl-vep ./vep --id "18 29172865 29172865 G/A 1" --species homo_sapiens --force  --database --assembly GRCh37 --refseq --tab --custom /data/TTRdb_cureted.sort.vcf.gz,TTRdb,vcf,exact,0,REVEL -o /data/TTRdb_output.txt
+docker run -it -v $(pwd):/data  ensemblorg/ensembl-vep ./vep --id "18 29172865 29172865 G/A 1" --species homo_sapiens --force  --database --assembly GRCh37 --refseq --tab --custom /data/TTRdb_cureted.sort.vcf.gz,TTRdb,vcf,exact,0,REVEL,REVEL_TTMDB,REVEL_RISK -o /data/TTRdb_output.txt
 ```
 
 **TTRdb_output.txt**
