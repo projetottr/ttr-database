@@ -22,11 +22,18 @@ O Docker Engine está disponível em diversas de plataformas Linux, macOS e Wind
 
 * https://docs.docker.com/engine/install/
 
-Adicionando seu usuário no grupo do root
+Para criar o grupo docker e adicionar seu usuário:
+Crie o grupo docker.
+
 ```bash
-sudo usermod -aG docker $USER
+sudo groupadd docker
 ```
 
+Adicione seu usuário ao grupo docker.
+
+```bash
+ sudo usermod -aG docker $USER
+```
 
 # Anotando com VEP ensembl
 
