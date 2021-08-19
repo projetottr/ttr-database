@@ -41,7 +41,7 @@ O Docker Engine está disponível em diversas de plataformas Linux, macOS e Wind
 docker pull ensemblorg/ensembl-vep
 ```
 
-### Clonar ou Download direto
+### git clone ou download (link abaixo)
 ```bash
 git clone https://github.com/projetottr/ttr-database.git
 ```
@@ -52,7 +52,7 @@ ou
 ### Executando um Exemplo
 Neste exemplo vamos anotar a variante `18 29172865 29172865 G/A 1`, o resultado será salvo no arquivo `TTRdb_output.txt`.
 
-1. Entre no diretório `ttr-database` (do git ou do download que gerou)
+1. No terminal, entre no diretório `ttr-database`
 2. Execute o `docker run`
 
 
