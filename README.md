@@ -22,7 +22,10 @@ O Docker Engine está disponível em diversas de plataformas Linux, macOS e Wind
 
 * https://docs.docker.com/engine/install/
 
-Para criar o grupo docker e adicionar seu usuário:
+> **Nota**:
+> Para executar o Docker sem privilégios de root, consulte Executar o daemon do Docker como um usuário não root (modo Rootless).
+
+
 Crie o grupo docker.
 
 ```bash
