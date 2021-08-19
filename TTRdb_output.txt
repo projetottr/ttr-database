@@ -1,0 +1,39 @@
+## ENSEMBL VARIANT EFFECT PREDICTOR v104.3
+## Output produced at 2021-08-19 17:57:24
+## Connected to homo_sapiens_core_104_37 on ensembldb.ensembl.org
+## Using API version 104, DB version 104
+## ensembl-funcgen version 104.59ae779
+## ensembl-variation version 104.6154f8b
+## ensembl version 104.1af1dce
+## ensembl-io version 104.1d3bb6e
+## assembly version GRCh37.p13
+## refseq version 2020-10-26 17:03:42 - GCF_000001405.25_GRCh37.p13_genomic.gff
+## genebuild version 2011-04
+## gencode version GENCODE 19
+## Column descriptions:
+## Uploaded_variation : Identifier of uploaded variant
+## Location : Location of variant in standard coordinate format (chr:start or chr:start-end)
+## Allele : The variant allele used to calculate the consequence
+## Gene : Stable ID of affected gene
+## Feature : Stable ID of feature
+## Feature_type : Type of feature - Transcript, RegulatoryFeature or MotifFeature
+## Consequence : Consequence type
+## cDNA_position : Relative position of base pair in cDNA sequence
+## CDS_position : Relative position of base pair in coding sequence
+## Protein_position : Relative position of amino acid in protein
+## Amino_acids : Reference and variant amino acids
+## Codons : Reference and variant codon sequence
+## Existing_variation : Identifier(s) of co-located known variants
+## IMPACT : Subjective impact classification of consequence type
+## DISTANCE : Shortest distance from variant to transcript
+## STRAND : Strand of the feature (1/-1)
+## FLAGS : Transcript quality flags
+## REFSEQ_MATCH : RefSeq transcript match status
+## REFSEQ_OFFSET : HGVS adjustment length required due to mismatch between RefSeq transcript and the reference genome
+## SOURCE : Source of transcript
+## TTRdb : /data/TTRdb_curated.vcf.gz (exact)
+## TTRdb_REVEL : REVEL field from /data/TTRdb_curated.vcf.gz
+## TTRdb_REVEL_TTMDB : REVEL_TTMDB field from /data/TTRdb_curated.vcf.gz
+## TTRdb_REVEL_RISK : REVEL_RISK field from /data/TTRdb_curated.vcf.gz
+#Uploaded_variation	Location	Allele	Gene	Feature	Feature_type	Consequence	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	IMPACT	DISTANCE	STRAND	FLAGS	REFSEQ_MATCH	REFSEQ_OFFSET	SOURCE	TTRdb	TTRdb_REVEL	TTRdb_REVEL_TTMDB	TTRdb_REVEL_RISK
+18_29172865_G/A	18:29172865	A	7276	NM_000371.4	Transcript	missense_variant	102	76	26	G/S	Ggt/Agt	-	MODERATE	-	1	-	-	-	-	NM_000371.4:c.76G>A	BENIGN	0.174	VERY LOW
