@@ -81,8 +81,6 @@ docker run -it -v $(pwd):/data  ensemblorg/ensembl-vep ./vep --id "18 29172865 2
 
 # Colunas e Valores
 
-# Resultados
-
 | RISK (valores) | RISK (descrição) |
 | -------------- | ---------------- |
 | <=0,559        | VERY LOW         |
