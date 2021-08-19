@@ -25,9 +25,17 @@ O Docker Engine está disponível em diversas de plataformas Linux, macOS e Wind
 
 # Anotando com VEP ensembl
 
+**Download da imagem do ensembl-vep**
+```bash
+docker pull ensemblorg/ensembl-vep
+```
+
+**Rodando um Exemplo**
+
+Neste exemplo vamos antotar utilizando uma variante `18 29172865 29172865 G/A 1` e o resultado será enviado para o arquivo `TTRdb_output.txt`.
 
 ```bash
-docker run -it -v $(pwd):/data  ensemblorg/ensembl-vep ./vep --id "18 29172865 29172865 G/A 1" --species homo_sapiens -o /data/output.txt --database --assembly GRCh37 --refseq --tab --custom /data/TTRdb_cureted.sort.vcf.gz,TTRdb,vcf,exact,0,REVEL --tab --force
+docker run -it -v $(pwd):/data  ensemblorg/ensembl-vep ./vep --id "18 29172865 29172865 G/A 1" --species homo_sapiens --force  --database --assembly GRCh37 --refseq --tab --custom /data/TTRdb_cureted.sort.vcf.gz,TTRdb,vcf,exact,0,REVEL -o /data/TTRdb_output.txt
 ```
 
 
