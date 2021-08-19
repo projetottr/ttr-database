@@ -25,6 +25,10 @@ O Docker Engine está disponível em diversas de plataformas Linux, macOS e Wind
 
 # Anotando com VEP ensembl
 
+1. Download da image do ensembl-vep (caso não tenha)
+2. Clonar o git ttr-database
+3. Execute o ensembl-vep
+
 **Download da imagem do ensembl-vep**
 ```bash
 docker pull ensemblorg/ensembl-vep
@@ -38,7 +42,6 @@ docker run -it -v $(pwd):/data  ensemblorg/ensembl-vep ./vep --id "18 29172865 2
 ```
 
 **TTRdb_output.txt**
-**
 ```
 ## ENSEMBL VARIANT EFFECT PREDICTOR v104.3
 ## Output produced at 2021-08-18 21:00:58
