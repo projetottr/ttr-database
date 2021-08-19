@@ -94,7 +94,7 @@ As últimas colunas da tabela: `REVEL, REVEL_TTMDB e REVEL_RISK`.
 
 # Colunas e Valores
 
-| **RISK (valores)** |** RISK (descrição)** |
+| **RISK (valores)** | **RISK (descrição)** |
 | -------------- | ---------------- |
 | <=0.559        | VERY LOW         |
 | 0.559          | LOW              |
