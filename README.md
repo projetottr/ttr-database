@@ -22,6 +22,11 @@ O Docker Engine está disponível em diversas de plataformas Linux, macOS e Wind
 
 * https://docs.docker.com/engine/install/
 
+Adicionando seu usuário no grupo do root
+```bash
+sudo usermod -aG docker $USER
+```
+
 
 # Anotando com VEP ensembl
 
